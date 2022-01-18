@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/6041ae593e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="display">
+        <input type="text" placeholder="0" id="screen" >
+    </div>
+    <div class="btn-container">
+        
+            
+        <table class="table">
+
+            <tr>
+                
+                <th class="mc-btn"><button  class="btn">MC</button></th>
+                <th class="mr-btn"><button  class="btn">MR</button></th>
+                <th><button class="btn">M+</button></th>
+                <th ><button class="btn">M-</button></th>
+                <th><button class="btn">MS</button></th>
+                
+                
+            </tr>
+        </table>
+    </div>    
+   
+       
+
+    <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-function"></i>Trignometry<i class="fas fa-angle-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#" onclick="sin()">sin</a>
+          <a href="#" onclick="cos()">cos</a>
+          <a href="#" onclick="tan()">tan</a>
+        </div>
+
+        <button class="dropbtn"><i class="fas fa-function"></i>Function<i class="fas fa-angle-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#" onclick="sin()">sin</a>
+          <a href="#" onclick="cos()">cos</a>
+          <a href="#" onclick="tan()">tan</a>
+        </div>
+      </div>
+    
+     
+    <div class="btn-container">
+        
+            
+        <table class="table">
+            <tr>
+                <th><button class="btn">2<sup>nd</sup></button></th>
+                <th class="sbtn"><button  onclick="pi()">&pi;</button></th>
+                <th class="sbtn"><button  onclick="e()">e</button></th>
+                <th class="sbtn"><button  onclick="screen.value=''">C</button></th>
+                <th class="sbtn"><button onclick="backspace()">CE</button></th>
+                
+                 
+            </tr>
+
+            <tr>
+                <th class="sbtn"><button onclick="pow()">X&sup2;</button></th>
+                <th class="sbtn"><button  onclick="inverse()">1/x</button></th>
+                <th class="sbtn"><button  onclick="moddata()">|x|</button></th>
+                <th class="sbtn"><button  onclick="exp()">exp</button></th>
+                <th><button class="btn">mod</button></th>
+            </tr>
+
+            <tr>
+                
+                <th class="sbtn" id="root"><button onclick="sqrt()"><i class="fas fa-square-root-alt"></i>root</button></th>
+                <th><button class="btn">(</button></th>
+                <th><button class="btn">)</button></th>
+                <th class="sbtn"><button  onclick="factorial()">X!</button></th>
+                <th><button class="btn">%</button></th>
+                
+                
+            </tr>
+
+            <tr>
+                <th class="sbtn"><button onclick="exponential()" >X<sup>y</sup></button></th>
+                <th><button class="btn"id="num_btn">7</button></th>
+                <th><button class="btn"id="num_btn">8</button></th>
+                <th><button class="btn"id="num_btn">9</button></th>
+                <th><button class="btn">X</button></th>
+                
+            </tr>
+
+            <tr>
+                <th class="sbtn"><button onclick="powerten()">10<sup>X</sup></button></th>
+                <th><button class="btn"id="num_btn">4</button></th>
+                <th><button class="btn"id="num_btn">5</button></th>
+                <th><button class="btn"id="num_btn">6</button></th>
+                <th><button class="btn">-</button></th>
+                
+            </tr>
+            <tr>
+                <th class="sbtn"><button onclick="log()">log</button></th> 
+                <th><button class="btn"id="num_btn">1</button></th>
+                <th><button class="btn"id="num_btn">2</button></th>
+                <th><button class="btn"id="num_btn">3</button></th>
+                <th><button class="btn">+</button></th>
+
+            </tr>
+
+            <tr>
+                <th><button class="btn">In</button></th>
+                <th><button class="btn">+/-</button></th>
+                <th><button class="btn" id="num_btn">0</button></th>
+                <th><button class="btn">.</button></th>
+                <th><button  id="equal_btn" onclick="screen.value=eval(screen.value);">=</button></th>
+
+            </tr>
+        </table>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
