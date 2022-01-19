@@ -20,10 +20,10 @@
 
             <tr>
                 
-                <th class="mc-btn"><button  class="btn">MC</button></th>
+                <th class="mc-btn"><button  onclick="mcbutton()">MC</button></th>
                 <th class="mr-btn"><button  class="btn">MR</button></th>
-                <th><button class="btn">M+</button></th>
-                <th ><button class="btn">M-</button></th>
+                <th class="plus-btn"><button onclick="plusm()">M+</button></th>
+                <th class="minus-btn" ><button onclick="minusm()">M-</button></th>
                 <th><button class="btn">MS</button></th>
                 
                 
@@ -114,7 +114,7 @@
                 <th><button class="btn">+/-</button></th>
                 <th><button class="btn" id="num_btn">0</button></th>
                 <th><button class="btn">.</button></th>
-                <th><button  id="equal_btn" onclick="screen.value=eval(screen.value);">=</button></th>
+                <th><button  id="equal_btn" onclick="screen.value=eval(screen.value);arr.push(screen.value);">=</button></th>
 
             </tr>
         </table>

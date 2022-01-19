@@ -1,5 +1,8 @@
 var screen=document.querySelector('#screen');
 var button=document.querySelectorAll('.btn');
+var arr=[];
+var temp='';
+var i=0;
 
 for(item of button)
 {
@@ -30,31 +33,37 @@ function exponential(){
 function sin()
 {
     screen.value=Math.sin(screen.value)
+    arr.push(screen.value);
 }
 
 function cos()
 {
     screen.value=Math.cos(screen.value)
+    arr.push(screen.value);
 }
 
 function tan()
 {
     screen.value=Math.tan(screen.value)
+    arr.push(screen.value);
 }
 
 function pow()
 {
     screen.value=Math.pow(screen.value,2)
+    arr.push(screen.value);
 }
 
 function sqrt()
 {
     screen.value=Math.sqrt(screen.value)
+    arr.push(screen.value);
 }
 
 function log()
 {
     screen.value=Math.log(screen.value)
+    arr.push(screen.value);
 }
 
 function pi()
@@ -77,6 +86,7 @@ function factorial()
         num-=1
     }
     screen.value=tot
+    arr.push(screen.value);
 
 }
 
@@ -89,6 +99,7 @@ function backspace()
 function inverse()
 {
     screen.value=1/(screen.value)
+    arr.push(screen.value);
 }
 
 function modedata()
@@ -105,5 +116,40 @@ function modedata()
 
 function powerten(){
     screen.value=Math.pow(10,screen.value)
+    arr.push(screen.value);
     
+}
+
+function minusm(){
+    if(arr.length-i<=0)
+    {
+        i=i+1;
+        screen.value='NO DATA'
+    }
+    else{
+        i=i+1;
+        screen.value=arr[arr.length-i];
+        
+    }
+    
+}
+
+function plusm(){
+    if(i<=1){
+        if(i!=0)
+        {
+            i=i-1
+        }
+        screen.value="NO DATA"
+    }
+    else{
+        i=i-1;
+        screen.value=arr[arr.length-i];
+        
+    }
+}
+
+function mcbutton(){
+    arr=[]
+
 }
