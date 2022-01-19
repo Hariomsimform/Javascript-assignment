@@ -125,3 +125,18 @@ h1{
     font-size: 15px;
     color: black;
 }
+.minus-btn button{
+    background: none;
+    border: none;
+    border-radius: none;
+}
+.plus-btn button{
+    background: none;
+    border: none;
+    border-radius: none;
+}
+.mc-btn button{
+    background: none;
+    border: none;
+    border-radius: none;
+}
